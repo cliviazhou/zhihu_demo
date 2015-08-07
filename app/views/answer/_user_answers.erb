@@ -1,0 +1,22 @@
+<div class="ui container">
+  <table class="ui teal celled table">
+    <thead>
+    <tr>
+      <th>QuestionID</th>
+      <th>AnswerID</th>
+      <th>FullURL</th>
+      <th>Title</th>
+    </tr>
+    </thead>
+    <tbody>
+    <% @answers.each do |answer| %>
+        <tr>
+          <td><%= answer.question_id %></td>
+          <td><%= answer.answer_id %></td>
+          <td><%= answer.url %></td>
+          <td><%= answer.title %></td>
+        </tr>
+    <% end %>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,57 @@
+<h2 class="ui center blue aligned icon header">
+  <i class="circular users icon"></i>
+  最受欢迎用户
+</h2>
+<div class="ui container">
+  <table class="ui teal celled table">
+    <thead>
+    <tr>
+      <th>User</th>
+      <th>Location</th>
+      <th>Buiness</th>
+      <th>Career</th>
+      <th>Education</th>
+      <th>Biography</th>
+      <th>Upvote</th>
+      <th>Folowers</th>
+    </tr>
+    </thead>
+    <tbody>
+    <% i = 0 %>
+    <% @people.each do |person| %>
+        <% if i != 0 and i % 30 == 0 %>
+            <% break %>
+        <% end %>
+        <tr>
+          <td><%= link_to person.nickname, '/person/' + person.get_user + '/answers' %></td>
+          <td><%= person.location %></td>
+          <td><%= person.business %></td>
+          <td><%= person.career %></td>
+          <td><%= person.education %></td>
+          <td><%= person.bio %></td>
+          <td><%= person.upvote %></td>
+          <td><%= person.followers %></td>
+        </tr>
+        <% i += 1 %>
+    <% end %>
+    </tbody>
+    <tfoot>
+    <tr>
+      <th colspan="<%= @page %>">
+        <div class="ui right floated pagination menu">
+          <a class="icon item">
+            <i class="left chevron icon"></i>
+          </a>
+          <a class="item">1</a>
+          <a class="item">2</a>
+          <a class="item">3</a>
+          <a class="item">4</a>
+          <a class="icon item">
+            <i class="right chevron icon"></i>
+          </a>
+        </div>
+      </th>
+    </tr>
+    </tfoot>
+  </table>
+</div>
