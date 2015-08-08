@@ -1,0 +1,15 @@
+<div class="ui container">
+  <div class="column">
+    <div class="ui six column grid">
+      <% @answers.each do |ans| %>
+          <div class="column">
+            <div class="ui raised segment">
+                <a class="ui red ribbon label">问题描述</a>
+
+                <a href="<%= ans[:url] %>"> <%= ans[:title] %></a>
+            </div>
+          </div>
+      <% end %>
+    </div>
+  </div>
+</div>

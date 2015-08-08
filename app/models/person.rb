@@ -24,4 +24,10 @@ class Person < ActiveRecord::Base
     end
   end
 
+  def get_person(user)
+    base = 'http://www.zhihu.com/people/'
+    @person = Person.find_by_userlink(base + user)
+    return @person
+  end
+
 end

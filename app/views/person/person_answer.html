@@ -1,0 +1,30 @@
+<div class="ui raised very padded text container">
+    <div class="ui centered card">
+        <div class="content">
+            <div class="header"><%= @person.nickname %></div>
+            <div class="meta"><i class="users icon"></i> <%= @person.followers %></div>
+            <div class="description">
+                <p><%= @person.bio %></p>
+
+                <p><%= @person.weibo %></p>
+            </div>
+        </div>
+        <div class="extra content">
+      <span class="left floated like">
+      <i class="like icon"></i>
+        <%= @person.upvote %>
+    </span>
+    <span class="right floated star">
+      <i class="star icon"></i>
+      <%= @person.collected %>
+    </span>
+        </div>
+    </div>
+</div>
+<br>
+<div class="ui container">
+    <h4 class="ui horizontal divider header">
+        Answers
+    </h4>
+    <%= render :partial => 'person/per_person_answers' %>
+</div>

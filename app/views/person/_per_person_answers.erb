@@ -2,19 +2,19 @@
   <table class="ui teal celled table">
     <thead>
     <tr>
+      <th>Title</th>
+      <th>AnswerURL</th>
       <th>QuestionID</th>
       <th>AnswerID</th>
-      <th>FullURL</th>
-      <th>Title</th>
     </tr>
     </thead>
     <tbody>
     <% @answers.each do |answer| %>
         <tr>
+          <td><%= answer.title %></td>
+          <td><a href=<%= answer.url %> target='_blank'> <%= answer.url %> </a></td>
           <td><%= answer.question_id %></td>
           <td><%= answer.answer_id %></td>
-          <td><%= answer.url %></td>
-          <td><%= answer.title %></td>
         </tr>
     <% end %>
     </tbody>

@@ -1,31 +1,14 @@
-<div class="ui raised very padded text container">
-  <div class="ui centered card">
-    <div class="content">
-      <div class="header"><%= @person.nickname %></div>
-      <div class="meta"><i class="users icon"></i> <%= @person.followers %></div>
-      <div class="description">
-        <p><%= @person.bio %></p>
+<div class="ui container">
+  <div class="ui page grid">
+    <div class="column">
+      <div class="ui huge message page grid center aligned">
+        <h1 class="ui huge header">问题精选</h1>
 
-        <p><%= @person.weibo %></p>
+        <p>我们随机从中选择一些问题，你可以点击参看原问题答案。总之这是一个不错的方向。我就先试试手</p>
+        <a class="ui green button" href="/answers">随机一下</a>
       </div>
-    </div>
-    <div class="extra content">
-      <span class="left floated like">
-      <i class="like icon"></i>
-        <%= @person.upvote %>
-    </span>
-    <span class="right floated star">
-      <i class="star icon"></i>
-      <%= @person.collected %>
-    </span>
     </div>
   </div>
 </div>
-<br>
-<div class="ui container">
-  <h4 class="ui horizontal divider header">
-    Answers
-  </h4>
-
-  <%= render :partial => 'answer/user_answers' %>
-</div>
+<hr style="margin-top: 50px; margin-bottom: 50px; position: relative; width: 86%;">
+<%= render :partial => 'answer/random_answers'%>

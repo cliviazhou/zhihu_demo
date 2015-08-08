@@ -11,9 +11,10 @@ Rails.application.routes.draw do
   get '/person' => 'person#index'
   get '/person/index' => 'person#index'
 
-  get '/answer' => 'answer#index'
+  get '/person/:user/answers' => 'person#person_answer'
 
-  get '/person/:user/answers' => 'answer#index'
+  get '/answers' => 'answer#index'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
