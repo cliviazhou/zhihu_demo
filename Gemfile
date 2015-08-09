@@ -28,6 +28,9 @@ gem 'semantic-ui-sass', '2.0.4.0'
 
 gem 'shorturl', '~> 1.0.0'
 
+gem 'unicorn', '~> 4.9.0'
+
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
