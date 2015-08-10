@@ -22,5 +22,13 @@ module Sysunlp
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+    config.action_view.field_error_proc = Proc.new { |html_tag, instance| html_tag.html_safe }
+    # set custom devise
+    config.to_prepare do
+      Devise::SessionsController.layout 'devise/login'
+      Devise::RegistrationsController.layout proc{ |controller| user_signed_in? ? "application" : 'devise/signup' }
+      Devise::PasswordsController.layout 'devise/edit'
+    end
+
   end
 end

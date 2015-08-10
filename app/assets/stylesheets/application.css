@@ -14,3 +14,19 @@
  *= require_self
  *= require semantic-ui
  */
+
+
+body {
+    background-color: #DADADA;
+}
+
+body > #login {
+    height: 100%;
+}
+
+#col {
+    max-width: 450px;
+}
+
+.field_with_errors { display: inline;
+}
