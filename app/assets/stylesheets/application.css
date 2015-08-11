@@ -24,6 +24,10 @@ body > #login {
     height: 100%;
 }
 
+#main {
+    margin-top: 80px;
+}
+
 #col {
     max-width: 450px;
 }
