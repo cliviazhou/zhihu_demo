@@ -45574,3 +45574,1136 @@ Processing by PersonController#index as HTML
   Rendered person/index.html.erb within layouts/application (49.7ms)
   Rendered layouts/_nav_bar.html.erb (0.3ms)
 Completed 200 OK in 333ms (Views: 315.1ms | ActiveRecord: 10.9ms)
+
+
+Started GET "/" for ::1 at 2015-08-09 11:36:37 +0800
+
+Mysql2::Error (Can't connect to local MySQL server through socket '/tmp/mysql.sock' (2)):
+  mysql2 (0.3.19) lib/mysql2/client.rb:70:in `connect'
+  mysql2 (0.3.19) lib/mysql2/client.rb:70:in `initialize'
+  activerecord (4.2.1) lib/active_record/connection_adapters/mysql2_adapter.rb:18:in `new'
+  activerecord (4.2.1) lib/active_record/connection_adapters/mysql2_adapter.rb:18:in `mysql2_connection'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  /Users/cliviazhou/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  /Users/cliviazhou/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:567:in `retrieve_connection'
+  activerecord (4.2.1) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.1) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.1) lib/active_record/migration.rb:384:in `connection'
+  activerecord (4.2.1) lib/active_record/migration.rb:371:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/cliviazhou/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/cliviazhou/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/cliviazhou/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/cliviazhou/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.9ms)
+  Rendered /Users/cliviazhou/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/cliviazhou/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/cliviazhou/.rvm/gems/ruby-2.0.0-p643/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (83.3ms)
+  Rendered /Users/cliviazhou/.rvm/gems/ruby-2.0.0-p643/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/cliviazhou/.rvm/gems/ruby-2.0.0-p643/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/cliviazhou/.rvm/gems/ruby-2.0.0-p643/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/cliviazhou/.rvm/gems/ruby-2.0.0-p643/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/cliviazhou/.rvm/gems/ruby-2.0.0-p643/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (25.8ms)
+  Rendered /Users/cliviazhou/.rvm/gems/ruby-2.0.0-p643/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/cliviazhou/.rvm/gems/ruby-2.0.0-p643/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/cliviazhou/.rvm/gems/ruby-2.0.0-p643/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (52.7ms)
+
+
+Started GET "/" for ::1 at 2015-08-09 11:37:00 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (3.7ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_nav_bar.html.erb (0.6ms)
+Completed 200 OK in 982ms (Views: 972.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/answer.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-09 11:37:01 +0800
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2015-08-09 11:37:01 +0800
+
+
+Started GET "/assets/person.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-09 11:37:01 +0800
+
+
+Started GET "/assets/semantic-ui.self-864c526eb2eee62f7735a1db47e4d7b169b1be3c2aab715766156be460ce691d.css?body=1" for ::1 at 2015-08-09 11:37:01 +0800
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-09 11:37:01 +0800
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-09 11:37:01 +0800
+
+
+Started GET "/assets/scaffolds.self-8cc45d08263daa3628b8b19c49c36f7f0db383748b07b5590390bf8a50461a3e.css?body=1" for ::1 at 2015-08-09 11:37:01 +0800
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-09 11:37:01 +0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-09 11:37:01 +0800
+
+
+Started GET "/assets/semantic-ui/api.self-41c0adffbecfcf2e716e31240a63841aa129600ceb264bebf23b29e733b7e242.js?body=1" for ::1 at 2015-08-09 11:37:01 +0800
+
+
+Started GET "/assets/semantic-ui/colorize.self-904f87357084ca2b8e32bc5b3f5d8e1dd927d753ae9b369f674ac43199d14f98.js?body=1" for ::1 at 2015-08-09 11:37:01 +0800
+
+
+Started GET "/assets/semantic-ui/embed.self-530fd315ddc22ed191518492a2dd30d71ab8565403a24904f998b4aa2b01f66d.js?body=1" for ::1 at 2015-08-09 11:37:01 +0800
+
+
+Started GET "/assets/semantic-ui/form.self-118733a62a9a4507ce6dbf5c89b42287aec3f5829f340a024aca276d2365ba34.js?body=1" for ::1 at 2015-08-09 11:37:01 +0800
+
+
+Started GET "/assets/semantic-ui/state.self-ba8c200df7a3be7eef8a0dbc47e7d1506472933b42d9ba14eba40727257a53b3.js?body=1" for ::1 at 2015-08-09 11:37:01 +0800
+
+
+Started GET "/assets/semantic-ui/visibility.self-71f823b1b59266ae8f5e6e1bc7e5f770a80891cc256e19b23fb07dd23d3d50ee.js?body=1" for ::1 at 2015-08-09 11:37:01 +0800
+
+
+Started GET "/assets/semantic-ui/visit.self-f6b9d873d3b931c907b26c207fef8a9ebc244cb3f8f10b1171fec1bcdd46bd9b.js?body=1" for ::1 at 2015-08-09 11:37:01 +0800
+
+
+Started GET "/assets/semantic-ui/site.self-0715a46a91f99409b252bf26f216ebd06c2473766508d2737e5a87825cff9fc8.js?body=1" for ::1 at 2015-08-09 11:37:01 +0800
+
+
+Started GET "/assets/semantic-ui/accordion.self-f02e8a229cc5d3b5a57e50349c06b1ecd838c0623b920a7b440c7fe91ced34aa.js?body=1" for ::1 at 2015-08-09 11:37:01 +0800
+
+
+Started GET "/assets/semantic-ui/checkbox.self-33495d45f6a83158b9830d5c4c6469f6130c2ff0f8b52c4f3ca57ef43a0e6bc9.js?body=1" for ::1 at 2015-08-09 11:37:01 +0800
+
+
+Started GET "/assets/semantic-ui/dimmer.self-fa3afe374ef2e859bc66df601c98c8ee40a93fcad9752780b9d28970fbf091e8.js?body=1" for ::1 at 2015-08-09 11:37:01 +0800
+
+
+Started GET "/assets/semantic-ui/dropdown.self-7c44fd09d5a95e76f51a7b2cf9446b2e0973fc3803430dd9bd32cffa01f4ddd3.js?body=1" for ::1 at 2015-08-09 11:37:01 +0800
+
+
+Started GET "/assets/semantic-ui/modal.self-fca0c9dc8b99a58d44bf44b68f15ef97a7e0fdad255b54895cfa20bba23504db.js?body=1" for ::1 at 2015-08-09 11:37:01 +0800
+
+
+Started GET "/assets/semantic-ui/nag.self-4e27276d1f23482f4492a51e35bb43636ca5c3c99ca10e2c2ba2624cfb9972d7.js?body=1" for ::1 at 2015-08-09 11:37:01 +0800
+
+
+Started GET "/assets/semantic-ui/popup.self-58e94aed7aa0ff5d910cf8b382aae9c38c2330838038859f184dfaf2a882622e.js?body=1" for ::1 at 2015-08-09 11:37:01 +0800
+
+
+Started GET "/assets/semantic-ui/progress.self-705106fdadb10d0e793204d83edc38b896fc8af4e9b2418768f17548167e771b.js?body=1" for ::1 at 2015-08-09 11:37:01 +0800
+
+
+Started GET "/assets/semantic-ui/rating.self-2eb43fbe99f8781edfd7558e6be4933b01960a25982897cf9073733d626d7668.js?body=1" for ::1 at 2015-08-09 11:37:01 +0800
+
+
+Started GET "/assets/semantic-ui/search.self-a8ee27c8e616ca18cbb6fe393be577e1436fa561dae9b8eb7b0f05a43d069e93.js?body=1" for ::1 at 2015-08-09 11:37:01 +0800
+
+
+Started GET "/assets/semantic-ui/shape.self-40ba056c6d298c281da6470241500c9918dafadf710200b785bfe8a9b9599068.js?body=1" for ::1 at 2015-08-09 11:37:01 +0800
+
+
+Started GET "/assets/semantic-ui/sidebar.self-9e321420597786ccc69ba84bf2b195cf08882f192420edc52bb8efbbca005a3b.js?body=1" for ::1 at 2015-08-09 11:37:01 +0800
+
+
+Started GET "/assets/semantic-ui/sticky.self-c879f33383a63046bfb29a93a3ecaf3c252c28077074c613d3372abceea958a2.js?body=1" for ::1 at 2015-08-09 11:37:01 +0800
+
+
+Started GET "/assets/semantic-ui/tab.self-061c8d32b522da18b0530b1774b9567661cd2b5f6bbc8e70edfc4cec2ba53fda.js?body=1" for ::1 at 2015-08-09 11:37:01 +0800
+
+
+Started GET "/assets/semantic-ui/transition.self-db27b478ce3300f9051c4a35506b3ae6a18efb960d777fccc3346ba82897be0b.js?body=1" for ::1 at 2015-08-09 11:37:01 +0800
+
+
+Started GET "/assets/semantic-ui.self-49cb2d2ab1323ea968a401fbd24a20d2b51aa1879c735f4b16f487797c9fa81f.js?body=1" for ::1 at 2015-08-09 11:37:01 +0800
+
+
+Started GET "/assets/answer.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-09 11:37:01 +0800
+
+
+Started GET "/assets/semantic-ui/video.self-11705175a979dac0b96b76b658123b336468f98009521dc9c7df31d18d994e08.js?body=1" for ::1 at 2015-08-09 11:37:01 +0800
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-09 11:37:01 +0800
+
+
+Started GET "/assets/person.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-08-09 11:37:01 +0800
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-08-09 11:37:01 +0800
+
+
+Started GET "/assets/semantic-ui/icons-e3870de89716b72cb61a4bba0e17c75783b361cdaba35ea96961c3070bd8ca18.woff" for ::1 at 2015-08-09 11:37:01 +0800
+
+
+Started GET "/answers" for ::1 at 2015-08-09 11:37:03 +0800
+Processing by AnswerController#index as HTML
+  [1m[35mAnswer Load (7.5ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 2332 LIMIT 1
+  [1m[36mAnswer Load (0.9ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 8684 LIMIT 1[0m
+  [1m[35mAnswer Load (1.0ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 26199 LIMIT 1
+  [1m[36mAnswer Load (1.0ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 4020 LIMIT 1[0m
+  [1m[35mAnswer Load (1.0ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 11974 LIMIT 1
+  [1m[36mAnswer Load (0.9ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 9112 LIMIT 1[0m
+  Rendered answer/_random_answers.erb (1.1ms)
+  Rendered answer/index.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_nav_bar.html.erb (1.0ms)
+Completed 200 OK in 313ms (Views: 269.5ms | ActiveRecord: 20.9ms)
+
+
+Started GET "/answers" for ::1 at 2015-08-09 11:37:06 +0800
+Processing by AnswerController#index as HTML
+  [1m[35mAnswer Load (8.5ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 9862 LIMIT 1
+  [1m[36mAnswer Load (1.1ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 5411 LIMIT 1[0m
+  [1m[35mAnswer Load (1.0ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 11317 LIMIT 1
+  [1m[36mAnswer Load (1.0ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 18198 LIMIT 1[0m
+  [1m[35mAnswer Load (1.0ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 27058 LIMIT 1
+  [1m[36mAnswer Load (0.9ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 10355 LIMIT 1[0m
+  Rendered answer/_random_answers.erb (0.3ms)
+  Rendered answer/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_nav_bar.html.erb (0.2ms)
+Completed 200 OK in 263ms (Views: 245.5ms | ActiveRecord: 13.4ms)
+
+
+Started GET "/answers" for ::1 at 2015-08-09 11:37:07 +0800
+Processing by AnswerController#index as HTML
+  [1m[35mAnswer Load (8.1ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 8951 LIMIT 1
+  [1m[36mAnswer Load (0.9ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 2533 LIMIT 1[0m
+  [1m[35mAnswer Load (0.7ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 16909 LIMIT 1
+  [1m[36mAnswer Load (0.8ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 31309 LIMIT 1[0m
+  [1m[35mAnswer Load (0.7ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 34424 LIMIT 1
+  [1m[36mAnswer Load (0.9ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 29801 LIMIT 1[0m
+  Rendered answer/_random_answers.erb (0.2ms)
+  Rendered answer/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_nav_bar.html.erb (0.3ms)
+Completed 200 OK in 175ms (Views: 159.1ms | ActiveRecord: 12.3ms)
+
+
+Started GET "/answers" for ::1 at 2015-08-09 11:37:08 +0800
+Processing by AnswerController#index as HTML
+  [1m[35mAnswer Load (8.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 6675 LIMIT 1
+  [1m[36mAnswer Load (1.0ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 18078 LIMIT 1[0m
+  [1m[35mAnswer Load (1.1ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 17970 LIMIT 1
+  [1m[36mAnswer Load (0.9ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 33005 LIMIT 1[0m
+  [1m[35mAnswer Load (0.8ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 11413 LIMIT 1
+  [1m[36mAnswer Load (0.7ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 55239 LIMIT 1[0m
+  Rendered answer/_random_answers.erb (0.2ms)
+  Rendered answer/index.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_nav_bar.html.erb (0.3ms)
+Completed 200 OK in 266ms (Views: 249.3ms | ActiveRecord: 12.7ms)
+
+
+Started GET "/answers" for ::1 at 2015-08-09 11:37:09 +0800
+Processing by AnswerController#index as HTML
+  [1m[35mAnswer Load (8.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 7102 LIMIT 1
+  [1m[36mAnswer Load (1.0ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 17176 LIMIT 1[0m
+  [1m[35mAnswer Load (0.9ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 24468 LIMIT 1
+  [1m[36mAnswer Load (1.0ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 13443 LIMIT 1[0m
+  [1m[35mAnswer Load (0.9ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 44968 LIMIT 1
+  [1m[36mAnswer Load (0.4ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 29787 LIMIT 1[0m
+  Rendered answer/_random_answers.erb (0.2ms)
+  Rendered answer/index.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_nav_bar.html.erb (0.2ms)
+Completed 200 OK in 279ms (Views: 262.7ms | ActiveRecord: 12.5ms)
+
+
+Started GET "/answers" for ::1 at 2015-08-09 11:37:09 +0800
+Processing by AnswerController#index as HTML
+  [1m[35mAnswer Load (8.0ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 9075 LIMIT 1
+  [1m[36mAnswer Load (0.3ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 17141 LIMIT 1[0m
+  [1m[35mAnswer Load (0.7ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 18830 LIMIT 1
+  [1m[36mAnswer Load (0.7ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 27276 LIMIT 1[0m
+  [1m[35mAnswer Load (0.9ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 27590 LIMIT 1
+  [1m[36mAnswer Load (0.7ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 38366 LIMIT 1[0m
+  Rendered answer/_random_answers.erb (0.2ms)
+  Rendered answer/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_nav_bar.html.erb (0.1ms)
+Completed 200 OK in 181ms (Views: 166.7ms | ActiveRecord: 11.3ms)
+
+
+Started GET "/person" for ::1 at 2015-08-09 11:37:11 +0800
+Processing by PersonController#index as HTML
+  [1m[35m (14.6ms)[0m  SELECT COUNT(*) FROM `people` WHERE (upvote > 5000)
+  [1m[36mPerson Load (6.5ms)[0m  [1mSELECT `people`.* FROM `people` WHERE (upvote > 5000)  ORDER BY upvote desc[0m
+  Rendered person/index.html.erb within layouts/application (120.5ms)
+  Rendered layouts/_nav_bar.html.erb (0.2ms)
+Completed 200 OK in 309ms (Views: 272.5ms | ActiveRecord: 26.8ms)
+
+
+Started GET "/person/bi-fu-wang-zi/answers" for ::1 at 2015-08-09 11:37:21 +0800
+Processing by PersonController#person_answer as HTML
+  Parameters: {"user"=>"bi-fu-wang-zi"}
+  [1m[35mPerson Load (8.7ms)[0m  SELECT  `people`.* FROM `people` WHERE `people`.`userlink` = 'http://www.zhihu.com/people/bi-fu-wang-zi' LIMIT 1
+  [1m[36mAnswer Load (129.9ms)[0m  [1mSELECT `answers`.* FROM `answers` WHERE (user = 'bi-fu-wang-zi')[0m
+  Rendered person/_per_person_answers.erb (136.8ms)
+  Rendered person/person_answer.html within layouts/application (139.7ms)
+  Rendered layouts/_nav_bar.html.erb (0.2ms)
+Completed 200 OK in 425ms (Views: 283.8ms | ActiveRecord: 138.7ms)
+
+
+Started GET "/person/bi-fu-wang-zi/answers" for ::1 at 2015-08-09 11:37:22 +0800
+Processing by PersonController#person_answer as HTML
+  Parameters: {"user"=>"bi-fu-wang-zi"}
+  [1m[35mPerson Load (8.0ms)[0m  SELECT  `people`.* FROM `people` WHERE `people`.`userlink` = 'http://www.zhihu.com/people/bi-fu-wang-zi' LIMIT 1
+  [1m[36mAnswer Load (35.0ms)[0m  [1mSELECT `answers`.* FROM `answers` WHERE (user = 'bi-fu-wang-zi')[0m
+  Rendered person/_per_person_answers.erb (36.5ms)
+  Rendered person/person_answer.html within layouts/application (37.3ms)
+  Rendered layouts/_nav_bar.html.erb (0.2ms)
+Completed 200 OK in 276ms (Views: 231.3ms | ActiveRecord: 43.0ms)
+
+
+Started GET "/answers" for ::1 at 2015-08-09 11:38:25 +0800
+Processing by AnswerController#index as HTML
+  [1m[35mAnswer Load (0.4ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 8242 LIMIT 1
+  [1m[36mAnswer Load (0.3ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 2655 LIMIT 1[0m
+  [1m[35mAnswer Load (0.3ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 15642 LIMIT 1
+  [1m[36mAnswer Load (0.3ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 23893 LIMIT 1[0m
+  [1m[35mAnswer Load (0.3ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 12894 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 6700 LIMIT 1[0m
+  Rendered answer/_random_answers.erb (0.3ms)
+  Rendered answer/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_nav_bar.html.erb (0.2ms)
+Completed 200 OK in 187ms (Views: 181.5ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/answers" for ::1 at 2015-08-09 11:38:32 +0800
+Processing by AnswerController#index as HTML
+  [1m[35mAnswer Load (0.3ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 3541 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 8011 LIMIT 1[0m
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 19098 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 7939 LIMIT 1[0m
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 32279 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 17036 LIMIT 1[0m
+  Rendered answer/_random_answers.erb (0.2ms)
+  Rendered answer/index.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_nav_bar.html.erb (0.3ms)
+Completed 200 OK in 220ms (Views: 216.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/answers" for ::1 at 2015-08-09 11:38:35 +0800
+Processing by AnswerController#index as HTML
+  [1m[35mAnswer Load (0.4ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 9863 LIMIT 1
+  [1m[36mAnswer Load (0.3ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 18198 LIMIT 1[0m
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 20965 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 21280 LIMIT 1[0m
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 18005 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 59898 LIMIT 1[0m
+  Rendered answer/_random_answers.erb (0.2ms)
+  Rendered answer/index.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_nav_bar.html.erb (0.2ms)
+Completed 200 OK in 230ms (Views: 224.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/answers" for ::1 at 2015-08-09 11:38:38 +0800
+Processing by AnswerController#index as HTML
+  [1m[35mAnswer Load (0.4ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 7119 LIMIT 1
+  [1m[36mAnswer Load (0.3ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 15600 LIMIT 1[0m
+  [1m[35mAnswer Load (0.3ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 26692 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 31729 LIMIT 1[0m
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 28247 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 44265 LIMIT 1[0m
+  Rendered answer/_random_answers.erb (0.4ms)
+  Rendered answer/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_nav_bar.html.erb (0.3ms)
+Completed 200 OK in 160ms (Views: 155.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/answers" for ::1 at 2015-08-09 11:38:40 +0800
+Processing by AnswerController#index as HTML
+  [1m[35mAnswer Load (0.3ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 4352 LIMIT 1
+  [1m[36mAnswer Load (0.3ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 16766 LIMIT 1[0m
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 9787 LIMIT 1
+  [1m[36mAnswer Load (0.3ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 14376 LIMIT 1[0m
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 35034 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 42512 LIMIT 1[0m
+  Rendered answer/_random_answers.erb (0.2ms)
+  Rendered answer/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_nav_bar.html.erb (0.1ms)
+Completed 200 OK in 227ms (Views: 222.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/answers" for ::1 at 2015-08-09 11:38:43 +0800
+Processing by AnswerController#index as HTML
+  [1m[35mAnswer Load (0.3ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 6803 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 15685 LIMIT 1[0m
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 252 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 1314 LIMIT 1[0m
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 14272 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 34325 LIMIT 1[0m
+  Rendered answer/_random_answers.erb (0.2ms)
+  Rendered answer/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_nav_bar.html.erb (0.1ms)
+Completed 200 OK in 217ms (Views: 212.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/answers" for ::1 at 2015-08-09 11:38:45 +0800
+Processing by AnswerController#index as HTML
+  [1m[35mAnswer Load (0.4ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 891 LIMIT 1
+  [1m[36mAnswer Load (0.3ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 9676 LIMIT 1[0m
+  [1m[35mAnswer Load (0.3ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 26970 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 24354 LIMIT 1[0m
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 40924 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 16081 LIMIT 1[0m
+  Rendered answer/_random_answers.erb (0.2ms)
+  Rendered answer/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_nav_bar.html.erb (0.1ms)
+Completed 200 OK in 148ms (Views: 143.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/answers" for ::1 at 2015-08-09 11:38:55 +0800
+Processing by AnswerController#index as HTML
+  [1m[35mAnswer Load (0.3ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 340 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 13427 LIMIT 1[0m
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 28366 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 2249 LIMIT 1[0m
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 37844 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 55327 LIMIT 1[0m
+  Rendered answer/_random_answers.erb (0.2ms)
+  Rendered answer/index.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_nav_bar.html.erb (0.1ms)
+Completed 200 OK in 244ms (Views: 240.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/answers" for ::1 at 2015-08-09 11:38:59 +0800
+Processing by AnswerController#index as HTML
+  [1m[35mAnswer Load (0.3ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 5756 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 19137 LIMIT 1[0m
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 5439 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 37925 LIMIT 1[0m
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 20824 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 59208 LIMIT 1[0m
+  Rendered answer/_random_answers.erb (0.2ms)
+  Rendered answer/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_nav_bar.html.erb (0.1ms)
+Completed 200 OK in 244ms (Views: 239.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2015-08-09 11:39:00 +0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_nav_bar.html.erb (0.2ms)
+Completed 200 OK in 162ms (Views: 161.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/answers" for ::1 at 2015-08-09 11:39:03 +0800
+Processing by AnswerController#index as HTML
+  [1m[35mAnswer Load (0.3ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 2423 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 15921 LIMIT 1[0m
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 15152 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 17954 LIMIT 1[0m
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 43439 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 2190 LIMIT 1[0m
+  Rendered answer/_random_answers.erb (0.2ms)
+  Rendered answer/index.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_nav_bar.html.erb (0.3ms)
+Completed 200 OK in 259ms (Views: 255.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/person" for ::1 at 2015-08-09 11:39:05 +0800
+Processing by PersonController#index as HTML
+  [1m[35m (2.4ms)[0m  SELECT COUNT(*) FROM `people` WHERE (upvote > 5000)
+  [1m[36mPerson Load (4.5ms)[0m  [1mSELECT `people`.* FROM `people` WHERE (upvote > 5000)  ORDER BY upvote desc[0m
+  Rendered person/index.html.erb within layouts/application (20.1ms)
+  Rendered layouts/_nav_bar.html.erb (0.1ms)
+Completed 200 OK in 269ms (Views: 260.6ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/person" for ::1 at 2015-08-09 11:39:26 +0800
+Processing by PersonController#index as HTML
+  [1m[35m (2.2ms)[0m  SELECT COUNT(*) FROM `people` WHERE (upvote > 5000)
+  [1m[36mPerson Load (3.4ms)[0m  [1mSELECT `people`.* FROM `people` WHERE (upvote > 5000)  ORDER BY upvote desc[0m
+  Rendered person/index.html.erb within layouts/application (16.8ms)
+  Rendered layouts/_nav_bar.html.erb (0.2ms)
+Completed 200 OK in 247ms (Views: 240.1ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/answers" for ::1 at 2015-08-09 11:39:27 +0800
+Processing by AnswerController#index as HTML
+  [1m[35mAnswer Load (0.3ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 3829 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 3902 LIMIT 1[0m
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 25033 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 2849 LIMIT 1[0m
+  [1m[35mAnswer Load (0.4ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 13796 LIMIT 1
+  [1m[36mAnswer Load (0.4ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 5753 LIMIT 1[0m
+  Rendered answer/_random_answers.erb (0.4ms)
+  Rendered answer/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_nav_bar.html.erb (0.1ms)
+Completed 200 OK in 2268ms (Views: 139.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/answers" for ::1 at 2015-08-09 11:39:29 +0800
+Processing by AnswerController#index as HTML
+  [1m[35mAnswer Load (0.3ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 7643 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 9342 LIMIT 1[0m
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 2182 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 1691 LIMIT 1[0m
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 20431 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 9364 LIMIT 1[0m
+  Rendered answer/_random_answers.erb (0.2ms)
+  Rendered answer/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_nav_bar.html.erb (0.3ms)
+Completed 200 OK in 241ms (Views: 237.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/person" for ::1 at 2015-08-09 11:39:30 +0800
+Processing by PersonController#index as HTML
+  [1m[35m (2.1ms)[0m  SELECT COUNT(*) FROM `people` WHERE (upvote > 5000)
+  [1m[36mPerson Load (3.4ms)[0m  [1mSELECT `people`.* FROM `people` WHERE (upvote > 5000)  ORDER BY upvote desc[0m
+  Rendered person/index.html.erb within layouts/application (16.6ms)
+  Rendered layouts/_nav_bar.html.erb (0.2ms)
+Completed 200 OK in 249ms (Views: 242.3ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/answers" for ::1 at 2015-08-09 11:39:31 +0800
+Processing by AnswerController#index as HTML
+  [1m[35mAnswer Load (0.7ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 4485 LIMIT 1
+  [1m[36mAnswer Load (0.4ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 12067 LIMIT 1[0m
+  [1m[35mAnswer Load (0.3ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 1779 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 35858 LIMIT 1[0m
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 11884 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 50212 LIMIT 1[0m
+  Rendered answer/_random_answers.erb (0.2ms)
+  Rendered answer/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_nav_bar.html.erb (0.1ms)
+Completed 200 OK in 146ms (Views: 140.4ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for ::1 at 2015-08-09 11:39:33 +0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_nav_bar.html.erb (0.5ms)
+Completed 200 OK in 225ms (Views: 223.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/answers" for ::1 at 2015-08-09 11:47:41 +0800
+Processing by AnswerController#index as HTML
+  [1m[35mAnswer Load (0.4ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 5437 LIMIT 1
+  [1m[36mAnswer Load (0.3ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 7284 LIMIT 1[0m
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 21577 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 1602 LIMIT 1[0m
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 43163 LIMIT 1
+  [1m[36mAnswer Load (0.3ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 22158 LIMIT 1[0m
+  Rendered answer/_random_answers.erb (0.3ms)
+  Rendered answer/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_nav_bar.html.erb (0.2ms)
+Completed 200 OK in 313ms (Views: 308.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/person" for ::1 at 2015-08-09 11:47:43 +0800
+Processing by PersonController#index as HTML
+  [1m[35m (2.2ms)[0m  SELECT COUNT(*) FROM `people` WHERE (upvote > 5000)
+  [1m[36mPerson Load (7.6ms)[0m  [1mSELECT `people`.* FROM `people` WHERE (upvote > 5000)  ORDER BY upvote desc[0m
+  Rendered person/index.html.erb within layouts/application (22.7ms)
+  Rendered layouts/_nav_bar.html.erb (0.1ms)
+Completed 200 OK in 197ms (Views: 185.2ms | ActiveRecord: 9.8ms)
+
+
+Started GET "/" for ::1 at 2015-08-09 11:47:45 +0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_nav_bar.html.erb (0.2ms)
+Completed 200 OK in 248ms (Views: 247.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/person" for ::1 at 2015-08-09 11:53:33 +0800
+Processing by PersonController#index as HTML
+  [1m[35m (2.5ms)[0m  SELECT COUNT(*) FROM `people` WHERE (upvote > 5000)
+  [1m[36mPerson Load (3.9ms)[0m  [1mSELECT `people`.* FROM `people` WHERE (upvote > 5000)  ORDER BY upvote desc[0m
+  Rendered person/index.html.erb within layouts/application (24.5ms)
+  Rendered layouts/_nav_bar.html.erb (0.2ms)
+Completed 200 OK in 491ms (Views: 463.2ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/person/zhu-xuan-86/answers" for ::1 at 2015-08-09 11:53:35 +0800
+Processing by PersonController#person_answer as HTML
+  Parameters: {"user"=>"zhu-xuan-86"}
+  [1m[35mPerson Load (2.8ms)[0m  SELECT  `people`.* FROM `people` WHERE `people`.`userlink` = 'http://www.zhihu.com/people/zhu-xuan-86' LIMIT 1
+  [1m[36mAnswer Load (54.2ms)[0m  [1mSELECT `answers`.* FROM `answers` WHERE (user = 'zhu-xuan-86')[0m
+  Rendered person/_per_person_answers.erb (55.8ms)
+  Rendered person/person_answer.html within layouts/application (57.2ms)
+  Rendered layouts/_nav_bar.html.erb (0.1ms)
+Completed 200 OK in 229ms (Views: 170.0ms | ActiveRecord: 56.9ms)
+
+
+Started GET "/person/zhu-xuan-86/answers" for ::1 at 2015-08-09 11:53:35 +0800
+Processing by PersonController#person_answer as HTML
+  Parameters: {"user"=>"zhu-xuan-86"}
+  [1m[35mPerson Load (2.2ms)[0m  SELECT  `people`.* FROM `people` WHERE `people`.`userlink` = 'http://www.zhihu.com/people/zhu-xuan-86' LIMIT 1
+  [1m[36mAnswer Load (43.8ms)[0m  [1mSELECT `answers`.* FROM `answers` WHERE (user = 'zhu-xuan-86')[0m
+  Rendered person/_per_person_answers.erb (45.7ms)
+  Rendered person/person_answer.html within layouts/application (138.1ms)
+  Rendered layouts/_nav_bar.html.erb (0.1ms)
+Completed 200 OK in 303ms (Views: 255.6ms | ActiveRecord: 46.0ms)
+
+
+Started GET "/person/zhu-xuan-86/answers" for ::1 at 2015-08-09 11:53:36 +0800
+Processing by PersonController#person_answer as HTML
+  Parameters: {"user"=>"zhu-xuan-86"}
+  [1m[35mPerson Load (1.7ms)[0m  SELECT  `people`.* FROM `people` WHERE `people`.`userlink` = 'http://www.zhihu.com/people/zhu-xuan-86' LIMIT 1
+  [1m[36mAnswer Load (36.1ms)[0m  [1mSELECT `answers`.* FROM `answers` WHERE (user = 'zhu-xuan-86')[0m
+  Rendered person/_per_person_answers.erb (37.7ms)
+  Rendered person/person_answer.html within layouts/application (38.8ms)
+  Rendered layouts/_nav_bar.html.erb (0.2ms)
+Completed 200 OK in 295ms (Views: 255.8ms | ActiveRecord: 37.8ms)
+
+
+Started GET "/" for ::1 at 2015-08-09 16:16:57 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_nav_bar.html.erb (0.9ms)
+Completed 200 OK in 967ms (Views: 956.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/answers" for ::1 at 2015-08-09 16:16:58 +0800
+Processing by AnswerController#index as HTML
+  [1m[35mAnswer Load (1.1ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 8565 LIMIT 1
+  [1m[36mAnswer Load (0.3ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 3787 LIMIT 1[0m
+  [1m[35mAnswer Load (0.3ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 23679 LIMIT 1
+  [1m[36mAnswer Load (0.3ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 2667 LIMIT 1[0m
+  [1m[35mAnswer Load (0.3ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 10154 LIMIT 1
+  [1m[36mAnswer Load (0.3ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 6268 LIMIT 1[0m
+  Rendered answer/_random_answers.erb (1.0ms)
+  Rendered answer/index.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_nav_bar.html.erb (0.2ms)
+Completed 200 OK in 280ms (Views: 256.8ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/person" for ::1 at 2015-08-09 16:17:00 +0800
+Processing by PersonController#index as HTML
+  [1m[35m (5.7ms)[0m  SELECT COUNT(*) FROM `people` WHERE (upvote > 5000)
+  [1m[36mPerson Load (23.7ms)[0m  [1mSELECT `people`.* FROM `people` WHERE (upvote > 5000)  ORDER BY upvote desc[0m
+  Rendered person/index.html.erb within layouts/application (86.2ms)
+  Rendered layouts/_nav_bar.html.erb (0.2ms)
+Completed 200 OK in 341ms (Views: 297.3ms | ActiveRecord: 31.2ms)
+
+
+Started GET "/person/zhang-jia-wei/answers" for ::1 at 2015-08-09 16:17:03 +0800
+Processing by PersonController#person_answer as HTML
+  Parameters: {"user"=>"zhang-jia-wei"}
+  [1m[35mPerson Load (9.7ms)[0m  SELECT  `people`.* FROM `people` WHERE `people`.`userlink` = 'http://www.zhihu.com/people/zhang-jia-wei' LIMIT 1
+  [1m[36mAnswer Load (175.8ms)[0m  [1mSELECT `answers`.* FROM `answers` WHERE (user = 'zhang-jia-wei')[0m
+  Rendered person/_per_person_answers.erb (178.4ms)
+  Rendered person/person_answer.html within layouts/application (181.4ms)
+  Rendered layouts/_nav_bar.html.erb (0.2ms)
+Completed 200 OK in 440ms (Views: 251.7ms | ActiveRecord: 185.5ms)
+
+
+Started GET "/person/kaiserwang730/answers" for ::1 at 2015-08-09 16:17:15 +0800
+Processing by PersonController#person_answer as HTML
+  Parameters: {"user"=>"kaiserwang730"}
+  [1m[35mPerson Load (26.2ms)[0m  SELECT  `people`.* FROM `people` WHERE `people`.`userlink` = 'http://www.zhihu.com/people/kaiserwang730' LIMIT 1
+  [1m[36mAnswer Load (130.6ms)[0m  [1mSELECT `answers`.* FROM `answers` WHERE (user = 'kaiserwang730')[0m
+  Rendered person/_per_person_answers.erb (132.9ms)
+  Rendered person/person_answer.html within layouts/application (134.2ms)
+  Rendered layouts/_nav_bar.html.erb (0.2ms)
+Completed 200 OK in 318ms (Views: 159.0ms | ActiveRecord: 156.8ms)
+
+
+Started GET "/answers" for ::1 at 2015-08-09 16:20:45 +0800
+Processing by AnswerController#index as HTML
+  [1m[35mAnswer Load (0.4ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 3675 LIMIT 1
+  [1m[36mAnswer Load (0.3ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 2573 LIMIT 1[0m
+  [1m[35mAnswer Load (0.3ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 8219 LIMIT 1
+  [1m[36mAnswer Load (0.3ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 32128 LIMIT 1[0m
+  [1m[35mAnswer Load (0.3ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 28842 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 45748 LIMIT 1[0m
+  Rendered answer/_random_answers.erb (0.2ms)
+  Rendered answer/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_nav_bar.html.erb (0.3ms)
+Completed 200 OK in 220ms (Views: 214.7ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/answers" for ::1 at 2015-08-09 16:20:46 +0800
+Processing by AnswerController#index as HTML
+  [1m[35mAnswer Load (0.3ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 8267 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 6023 LIMIT 1[0m
+  [1m[35mAnswer Load (0.3ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 15574 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 12217 LIMIT 1[0m
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 24982 LIMIT 1
+  [1m[36mAnswer Load (0.3ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 56519 LIMIT 1[0m
+  Rendered answer/_random_answers.erb (0.2ms)
+  Rendered answer/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_nav_bar.html.erb (0.1ms)
+Completed 200 OK in 155ms (Views: 150.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/answers" for ::1 at 2015-08-09 16:20:52 +0800
+Processing by AnswerController#index as HTML
+  [1m[35mAnswer Load (0.4ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 5358 LIMIT 1
+  [1m[36mAnswer Load (0.3ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 8048 LIMIT 1[0m
+  [1m[35mAnswer Load (0.3ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 16223 LIMIT 1
+  [1m[36mAnswer Load (0.3ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 26549 LIMIT 1[0m
+  [1m[35mAnswer Load (0.3ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 43247 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 7131 LIMIT 1[0m
+  Rendered answer/_random_answers.erb (0.3ms)
+  Rendered answer/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_nav_bar.html.erb (0.1ms)
+Completed 200 OK in 168ms (Views: 162.7ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/answers" for ::1 at 2015-08-09 16:20:52 +0800
+Processing by AnswerController#index as HTML
+  [1m[35mAnswer Load (0.4ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 1378 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 362 LIMIT 1[0m
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 6451 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 24253 LIMIT 1[0m
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 4966 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 20969 LIMIT 1[0m
+  Rendered answer/_random_answers.erb (0.1ms)
+  Rendered answer/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_nav_bar.html.erb (0.1ms)
+Completed 200 OK in 246ms (Views: 242.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/answers" for ::1 at 2015-08-09 16:20:52 +0800
+Processing by AnswerController#index as HTML
+  [1m[35mAnswer Load (0.3ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 674 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 3691 LIMIT 1[0m
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 27222 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 22401 LIMIT 1[0m
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 44971 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 42365 LIMIT 1[0m
+  Rendered answer/_random_answers.erb (0.2ms)
+  Rendered answer/index.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_nav_bar.html.erb (0.2ms)
+Completed 200 OK in 251ms (Views: 247.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/answers" for ::1 at 2015-08-09 16:20:52 +0800
+Processing by AnswerController#index as HTML
+  [1m[35mAnswer Load (0.3ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 9630 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 17880 LIMIT 1[0m
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 27967 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 37078 LIMIT 1[0m
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 31981 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 40129 LIMIT 1[0m
+  Rendered answer/_random_answers.erb (0.2ms)
+  Rendered answer/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_nav_bar.html.erb (0.2ms)
+Completed 200 OK in 153ms (Views: 148.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/answers" for ::1 at 2015-08-09 16:20:53 +0800
+Processing by AnswerController#index as HTML
+  [1m[35mAnswer Load (0.3ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 1255 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 14970 LIMIT 1[0m
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 25363 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 30540 LIMIT 1[0m
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 17925 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 99 LIMIT 1[0m
+  Rendered answer/_random_answers.erb (0.2ms)
+  Rendered answer/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_nav_bar.html.erb (0.2ms)
+Completed 200 OK in 232ms (Views: 228.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/answers" for ::1 at 2015-08-09 16:20:54 +0800
+Processing by AnswerController#index as HTML
+  [1m[35mAnswer Load (0.3ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 5398 LIMIT 1
+  [1m[36mAnswer Load (0.3ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 11785 LIMIT 1[0m
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 16093 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 25868 LIMIT 1[0m
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 26585 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 40512 LIMIT 1[0m
+  Rendered answer/_random_answers.erb (0.2ms)
+  Rendered answer/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_nav_bar.html.erb (0.3ms)
+Completed 200 OK in 233ms (Views: 229.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/answers" for ::1 at 2015-08-09 16:20:55 +0800
+Processing by AnswerController#index as HTML
+  [1m[35mAnswer Load (0.3ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 8497 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 16410 LIMIT 1[0m
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 11973 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 20539 LIMIT 1[0m
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 4245 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 31275 LIMIT 1[0m
+  Rendered answer/_random_answers.erb (0.2ms)
+  Rendered answer/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_nav_bar.html.erb (0.1ms)
+Completed 200 OK in 149ms (Views: 144.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/answers" for ::1 at 2015-08-09 16:20:55 +0800
+Processing by AnswerController#index as HTML
+  [1m[35mAnswer Load (0.3ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 2828 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 13822 LIMIT 1[0m
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 10943 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 34954 LIMIT 1[0m
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 16158 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 51712 LIMIT 1[0m
+  Rendered answer/_random_answers.erb (0.2ms)
+  Rendered answer/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_nav_bar.html.erb (0.4ms)
+Completed 200 OK in 237ms (Views: 233.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/answers" for ::1 at 2015-08-09 16:20:56 +0800
+Processing by AnswerController#index as HTML
+  [1m[35mAnswer Load (0.3ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 7860 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 7956 LIMIT 1[0m
+  [1m[35mAnswer Load (0.3ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 16982 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 24593 LIMIT 1[0m
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 37254 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 24999 LIMIT 1[0m
+  Rendered answer/_random_answers.erb (0.2ms)
+  Rendered answer/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_nav_bar.html.erb (0.1ms)
+Completed 200 OK in 280ms (Views: 275.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/answers" for ::1 at 2015-08-09 16:20:57 +0800
+Processing by AnswerController#index as HTML
+  [1m[35mAnswer Load (0.4ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 293 LIMIT 1
+  [1m[36mAnswer Load (0.3ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 15418 LIMIT 1[0m
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 20339 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 19516 LIMIT 1[0m
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 32653 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 25299 LIMIT 1[0m
+  Rendered answer/_random_answers.erb (0.2ms)
+  Rendered answer/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_nav_bar.html.erb (0.1ms)
+Completed 200 OK in 180ms (Views: 176.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/answers" for ::1 at 2015-08-09 16:20:58 +0800
+Processing by AnswerController#index as HTML
+  [1m[35mAnswer Load (0.3ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 8379 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 2254 LIMIT 1[0m
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 22300 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 39683 LIMIT 1[0m
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 23622 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 12424 LIMIT 1[0m
+  Rendered answer/_random_answers.erb (0.1ms)
+  Rendered answer/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_nav_bar.html.erb (0.1ms)
+Completed 200 OK in 257ms (Views: 253.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/answers" for ::1 at 2015-08-09 16:20:58 +0800
+Processing by AnswerController#index as HTML
+  [1m[35mAnswer Load (0.3ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 5643 LIMIT 1
+  [1m[36mAnswer Load (0.3ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 17551 LIMIT 1[0m
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 13457 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 84 LIMIT 1[0m
+  [1m[35mAnswer Load (0.3ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 1724 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 53005 LIMIT 1[0m
+  Rendered answer/_random_answers.erb (0.2ms)
+  Rendered answer/index.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_nav_bar.html.erb (0.1ms)
+Completed 200 OK in 210ms (Views: 205.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/answers" for ::1 at 2015-08-09 16:21:00 +0800
+Processing by AnswerController#index as HTML
+  [1m[35mAnswer Load (0.3ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 874 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 9605 LIMIT 1[0m
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 6957 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 14165 LIMIT 1[0m
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 1798 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 23195 LIMIT 1[0m
+  Rendered answer/_random_answers.erb (0.1ms)
+  Rendered answer/index.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_nav_bar.html.erb (0.1ms)
+Completed 200 OK in 233ms (Views: 230.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/answers" for ::1 at 2015-08-09 16:21:02 +0800
+Processing by AnswerController#index as HTML
+  [1m[35mAnswer Load (0.5ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 9406 LIMIT 1
+  [1m[36mAnswer Load (0.4ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 17429 LIMIT 1[0m
+  [1m[35mAnswer Load (0.3ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 17467 LIMIT 1
+  [1m[36mAnswer Load (0.3ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 10435 LIMIT 1[0m
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 20655 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 43788 LIMIT 1[0m
+  Rendered answer/_random_answers.erb (0.2ms)
+  Rendered answer/index.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_nav_bar.html.erb (0.2ms)
+Completed 200 OK in 247ms (Views: 241.8ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/answers" for ::1 at 2015-08-09 16:21:02 +0800
+Processing by AnswerController#index as HTML
+  [1m[35mAnswer Load (0.3ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 3916 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 14070 LIMIT 1[0m
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 6291 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 752 LIMIT 1[0m
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 49514 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 17558 LIMIT 1[0m
+  Rendered answer/_random_answers.erb (0.2ms)
+  Rendered answer/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_nav_bar.html.erb (0.1ms)
+Completed 200 OK in 154ms (Views: 150.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/answers" for ::1 at 2015-08-09 16:21:03 +0800
+Processing by AnswerController#index as HTML
+  [1m[35mAnswer Load (0.3ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 4389 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 2768 LIMIT 1[0m
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 22833 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 13396 LIMIT 1[0m
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 24825 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 16186 LIMIT 1[0m
+  Rendered answer/_random_answers.erb (0.1ms)
+  Rendered answer/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_nav_bar.html.erb (0.1ms)
+Completed 200 OK in 272ms (Views: 268.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/answers" for ::1 at 2015-08-09 16:21:04 +0800
+Processing by AnswerController#index as HTML
+  [1m[35mAnswer Load (0.3ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 4993 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 18756 LIMIT 1[0m
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 21112 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 29655 LIMIT 1[0m
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 9083 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 32413 LIMIT 1[0m
+  Rendered answer/_random_answers.erb (0.2ms)
+  Rendered answer/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_nav_bar.html.erb (0.1ms)
+Completed 200 OK in 225ms (Views: 221.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/answers" for ::1 at 2015-08-09 16:21:05 +0800
+Processing by AnswerController#index as HTML
+  [1m[35mAnswer Load (0.3ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 9169 LIMIT 1
+  [1m[36mAnswer Load (0.3ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 10632 LIMIT 1[0m
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 23362 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 34279 LIMIT 1[0m
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 48335 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 9700 LIMIT 1[0m
+  Rendered answer/_random_answers.erb (0.2ms)
+  Rendered answer/index.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_nav_bar.html.erb (0.1ms)
+Completed 200 OK in 130ms (Views: 126.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/answers" for ::1 at 2015-08-09 16:21:05 +0800
+Processing by AnswerController#index as HTML
+  [1m[35mAnswer Load (0.3ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 1786 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 17564 LIMIT 1[0m
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 28419 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 781 LIMIT 1[0m
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 36942 LIMIT 1
+  [1m[36mAnswer Load (0.3ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 15337 LIMIT 1[0m
+  Rendered answer/_random_answers.erb (0.1ms)
+  Rendered answer/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_nav_bar.html.erb (0.1ms)
+Completed 200 OK in 204ms (Views: 200.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/answers" for ::1 at 2015-08-09 16:21:06 +0800
+Processing by AnswerController#index as HTML
+  [1m[35mAnswer Load (0.3ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 5829 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 5506 LIMIT 1[0m
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 1943 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 7260 LIMIT 1[0m
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 37402 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 24014 LIMIT 1[0m
+  Rendered answer/_random_answers.erb (0.2ms)
+  Rendered answer/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_nav_bar.html.erb (0.1ms)
+Completed 200 OK in 212ms (Views: 207.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/answers" for ::1 at 2015-08-09 16:21:07 +0800
+Processing by AnswerController#index as HTML
+  [1m[35mAnswer Load (0.3ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 325 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 14924 LIMIT 1[0m
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 4583 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 24719 LIMIT 1[0m
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 8176 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 55465 LIMIT 1[0m
+  Rendered answer/_random_answers.erb (0.2ms)
+  Rendered answer/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_nav_bar.html.erb (0.1ms)
+Completed 200 OK in 116ms (Views: 112.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/answers" for ::1 at 2015-08-09 16:21:08 +0800
+Processing by AnswerController#index as HTML
+  [1m[35mAnswer Load (0.4ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 2583 LIMIT 1
+  [1m[36mAnswer Load (0.3ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 2302 LIMIT 1[0m
+  [1m[35mAnswer Load (0.3ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 8695 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 1426 LIMIT 1[0m
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 44353 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 29317 LIMIT 1[0m
+  Rendered answer/_random_answers.erb (0.2ms)
+  Rendered answer/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_nav_bar.html.erb (0.1ms)
+Completed 200 OK in 205ms (Views: 200.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/answers" for ::1 at 2015-08-09 16:21:09 +0800
+Processing by AnswerController#index as HTML
+  [1m[35mAnswer Load (0.3ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 9707 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 8070 LIMIT 1[0m
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 24948 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 21993 LIMIT 1[0m
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 36778 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 54835 LIMIT 1[0m
+  Rendered answer/_random_answers.erb (0.2ms)
+  Rendered answer/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_nav_bar.html.erb (0.1ms)
+Completed 200 OK in 122ms (Views: 117.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/answers" for ::1 at 2015-08-09 16:21:09 +0800
+Processing by AnswerController#index as HTML
+  [1m[35mAnswer Load (0.3ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 5372 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 18085 LIMIT 1[0m
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 14252 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 25375 LIMIT 1[0m
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 12170 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 38506 LIMIT 1[0m
+  Rendered answer/_random_answers.erb (0.2ms)
+  Rendered answer/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_nav_bar.html.erb (0.1ms)
+Completed 200 OK in 217ms (Views: 213.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/answers" for ::1 at 2015-08-09 16:21:10 +0800
+Processing by AnswerController#index as HTML
+  [1m[35mAnswer Load (0.3ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 3545 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 8284 LIMIT 1[0m
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 21241 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 36034 LIMIT 1[0m
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 27213 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 25601 LIMIT 1[0m
+  Rendered answer/_random_answers.erb (0.2ms)
+  Rendered answer/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_nav_bar.html.erb (0.1ms)
+Completed 200 OK in 208ms (Views: 204.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/answers" for ::1 at 2015-08-09 16:21:12 +0800
+Processing by AnswerController#index as HTML
+  [1m[35mAnswer Load (0.4ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 815 LIMIT 1
+  [1m[36mAnswer Load (0.4ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 10351 LIMIT 1[0m
+  [1m[35mAnswer Load (0.3ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 23463 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 7226 LIMIT 1[0m
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 15945 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 46805 LIMIT 1[0m
+  Rendered answer/_random_answers.erb (0.2ms)
+  Rendered answer/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_nav_bar.html.erb (0.2ms)
+Completed 200 OK in 252ms (Views: 245.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/answers" for ::1 at 2015-08-09 16:21:13 +0800
+Processing by AnswerController#index as HTML
+  [1m[35mAnswer Load (0.5ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 628 LIMIT 1
+  [1m[36mAnswer Load (0.3ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 13452 LIMIT 1[0m
+  [1m[35mAnswer Load (0.3ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 29031 LIMIT 1
+  [1m[36mAnswer Load (0.3ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 12232 LIMIT 1[0m
+  [1m[35mAnswer Load (0.3ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 17436 LIMIT 1
+  [1m[36mAnswer Load (0.3ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 42314 LIMIT 1[0m
+  Rendered answer/_random_answers.erb (0.3ms)
+  Rendered answer/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_nav_bar.html.erb (0.1ms)
+Completed 200 OK in 368ms (Views: 362.5ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/answers" for ::1 at 2015-08-09 16:21:13 +0800
+Processing by AnswerController#index as HTML
+  [1m[35mAnswer Load (0.3ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 8218 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 19853 LIMIT 1[0m
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 36 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 1618 LIMIT 1[0m
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 45361 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 22710 LIMIT 1[0m
+  Rendered answer/_random_answers.erb (0.2ms)
+  Rendered answer/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_nav_bar.html.erb (0.5ms)
+Completed 200 OK in 370ms (Views: 366.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/answers" for ::1 at 2015-08-09 16:21:15 +0800
+Processing by AnswerController#index as HTML
+  [1m[35mAnswer Load (0.3ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 4913 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 483 LIMIT 1[0m
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 8133 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 21831 LIMIT 1[0m
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 4598 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 30797 LIMIT 1[0m
+  Rendered answer/_random_answers.erb (0.2ms)
+  Rendered answer/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_nav_bar.html.erb (0.1ms)
+Completed 200 OK in 148ms (Views: 144.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/answers" for ::1 at 2015-08-09 16:21:17 +0800
+Processing by AnswerController#index as HTML
+  [1m[35mAnswer Load (0.3ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 4350 LIMIT 1
+  [1m[36mAnswer Load (0.5ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 15051 LIMIT 1[0m
+  [1m[35mAnswer Load (0.6ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 27369 LIMIT 1
+  [1m[36mAnswer Load (0.3ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 26455 LIMIT 1[0m
+  [1m[35mAnswer Load (0.3ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 19425 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 55326 LIMIT 1[0m
+  Rendered answer/_random_answers.erb (0.1ms)
+  Rendered answer/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_nav_bar.html.erb (0.1ms)
+Completed 200 OK in 242ms (Views: 237.0ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/answers" for ::1 at 2015-08-09 16:25:25 +0800
+Processing by AnswerController#index as HTML
+  [1m[35mAnswer Load (0.4ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 9289 LIMIT 1
+  [1m[36mAnswer Load (0.4ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 19460 LIMIT 1[0m
+  [1m[35mAnswer Load (0.3ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 22191 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 18021 LIMIT 1[0m
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 46640 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 50650 LIMIT 1[0m
+  Rendered answer/_random_answers.erb (0.3ms)
+  Rendered answer/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_nav_bar.html.erb (0.3ms)
+Completed 200 OK in 275ms (Views: 270.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/answers" for ::1 at 2015-08-09 16:25:39 +0800
+Processing by AnswerController#index as HTML
+  [1m[35mAnswer Load (0.3ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 4581 LIMIT 1
+  [1m[36mAnswer Load (0.3ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 18719 LIMIT 1[0m
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 25970 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 34788 LIMIT 1[0m
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 11226 LIMIT 1
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  `answers`.* FROM `answers` WHERE `answers`.`id` = 14066 LIMIT 1[0m
+  Rendered answer/_random_answers.erb (0.2ms)
+  Rendered answer/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_nav_bar.html.erb (0.1ms)
+Completed 200 OK in 134ms (Views: 129.9ms | ActiveRecord: 1.3ms)
