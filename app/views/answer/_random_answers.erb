@@ -1,12 +1,11 @@
 <div class="ui container">
   <div class="column">
-    <div class="ui six column grid">
+    <div class="ui two column grid">
       <% @answers.each do |ans| %>
           <div class="column">
-            <div class="ui raised segment">
-                <a class="ui red ribbon label">问题描述</a>
-
-                <a href="<%= ans[:url] %>"> <%= ans[:title] %></a>
+            <div class="ui segment" style="height: 60px;">
+              <a class="ui orange label">问题描述</a>
+              <a href="<%= ans[:url] %>"> <%= ans[:title] %></a>
             </div>
           </div>
       <% end %>
