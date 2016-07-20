@@ -1,3 +1,0 @@
-== README
-
-I used Ruby on Rails to build a web application which is corresponding to the project *spider_for_zhihu*.
