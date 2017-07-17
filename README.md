@@ -1,6 +1,6 @@
 # README
 
-I used Ruby on Rails to build a web application.  The data of this project is crawled by the project **spider_for\_zhihu**.
+I used Ruby on Rails to build a web application.  The data of this project is crawled by the project **(spider-zh)[https://github.com/yoosan/spider-zh]**.
 
 
 ## How to run
