@@ -1,9 +1,9 @@
-#README
+# README
 
 I used Ruby on Rails to build a web application.  The data of this project is crawled by the project **spider_for\_zhihu**.
 
 
-##How to run
+## How to run
 First, you should install the requirements, including:
 
 + Ruby >= 2
@@ -13,7 +13,7 @@ First, you should install the requirements, including:
 
 and the gems listed in the **Gemfile**. Running this project also needs the data which is stored in MySQL. If all requirements satisfied, you should tap ``rails s`` and open ``http://localhost:3000 ``
 
-##Demo
+## Demo
 
 This projects looks like
 
